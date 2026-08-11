@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: fast-container
-        image: adhil7/fast-api:1
+        image: adhil7/fast-service:2
         imagePullPolicy: Always
         ports:
         - containerPort: 5000
