@@ -4,10 +4,10 @@ metadata:
   name: fast-service
   namespace: default
 spec:
-  type: ClusterIP
+  type: Nodeport
   selector:
     app: fast_api
   ports:
   - port: 80
-    targetPort: 5000
+    targetPort: 8000
     protocol: TCP
