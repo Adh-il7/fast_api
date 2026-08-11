@@ -4,10 +4,11 @@ metadata:
   name: fast-service
   namespace: default
 spec:
-  type: Nodeport
+  type: NodePort
   selector:
     app: fast_api
   ports:
   - port: 80
     targetPort: 8000
     protocol: TCP
+    nodePort: 30081
