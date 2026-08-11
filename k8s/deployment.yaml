@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: fast_api
+  name: fast-api
   namespace: default
   labels:
-    app: fast_api
+    app: fast-api
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: fast_api
+      app: fast-api
   template:
     metadata:
       labels:
-        app: fast_api
+        app: fast-api
     spec:
       containers:
       - name: fast-container
